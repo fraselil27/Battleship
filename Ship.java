@@ -2,14 +2,15 @@
 //Ship.java
 public class Ship
 {
-    int length;
-    String nameShip;
-    int posRow;
-    int posCol;
-    boolean horizontal;
+    private int lenShip;
+    private String nameShip;
+    private int posRow;
+    private int posCol;
+    private boolean horizontal;
     
-    public Ship()
+    public Ship(String name, int lenShip)
     {
-        
+
     }
+    
 }
