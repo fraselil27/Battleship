@@ -3,20 +3,64 @@
 
 public class Board
 {
-    public static void main(String[] args)
+    int length = 10;
+    String board1[][];
+    String board2[][];
+    int lenBoard = 10; 
+    String board1[][] = new board1[10][10];
+    String board2[][] = new board2[10][10];
+    
+    public Board(String bboard1[][], String bboard2[][])
     {
-        int lenBoard = 10;
-    int Board[][] = new Board[10][10];
-
-    for(int i = 0; i < 10; i++)
-    {
-        for(int j = 0; j < 10; j++)
+        for(int i = 0; i < 10; i++)
         {
-           Board[i][j] = i; 
+            for(int j = 0; j < 10; j++)
+            {
+                board1[i][j] = "-";
+                board2[i][j] = "-";
+            }
+        }
+    }
+    
+    public String toString()
+    {
+        for(int a = 0; a < 2; a++)
+        {
+            int temp = a + 1;
+            System.out.println("Board "+ temp +":");
+            System.out.println(" ABCDEFGHIJ")
+
+             for(int k = 0; k < 10; k++)
+            {
+                System.out.print(k);
+                for(int l = 0; l < 10; l++)
+                {
+                    System.out.print(board1[i][j])
+                }
+                System.out.print(/n);
+            }
+            System.out.print(/n);
+            System.out.print(/n);
         }
     }
 
-    System.out.print(Board[2][4]);
+    public boolean addShip(int row, int col, int len, boolean horizontal)
+    {
+
+    }
+    
+    public boolean foundShip(int len)
+    {
+
     }
 
+    public int shoot(int row, int col)
+    {
+
+    }
+
+    public boolean gameOver()
+    {
+
+    }
 }
