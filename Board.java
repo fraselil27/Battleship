@@ -3,6 +3,7 @@
 
 public class Board
 {
+    //initializing variables
     int length = 10;
     String board1[][];
     String board2[][];
@@ -10,6 +11,7 @@ public class Board
     String board1[][] = new board1[10][10];
     String board2[][] = new board2[10][10];
     
+    //Board constructor that fills the board with dashes to start the game
     public Board(String bboard1[][], String bboard2[][])
     {
         for(int i = 0; i < 10; i++)
@@ -21,7 +23,7 @@ public class Board
             }
         }
     }
-    
+    //toString prints out the board
     public String toString()
     {
         for(int a = 0; a < 2; a++)
@@ -43,24 +45,3 @@ public class Board
             System.out.print(/n);
         }
     }
-
-    public boolean addShip(int row, int col, int len, boolean horizontal)
-    {
-
-    }
-    
-    public boolean foundShip(int len)
-    {
-
-    }
-
-    public int shoot(int row, int col)
-    {
-
-    }
-
-    public boolean gameOver()
-    {
-
-    }
-}
